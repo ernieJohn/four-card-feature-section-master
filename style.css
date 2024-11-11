@@ -2,7 +2,6 @@ body {
   box-sizing: content-box;
   font-size: 15px;
   background-color: hsl(0, 0%, 98%);
-  color: hsl(234, 12%, 34%);
 }
 .container {
   display: grid;
