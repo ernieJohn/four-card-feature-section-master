@@ -1,0 +1,57 @@
+body {
+  box-sizing: content-box;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+header {
+  text-align: center;
+}
+.heading {
+  display: inline-block;
+  max-width: 510px;
+}
+.card-1 {
+  background-color: white;
+  display: inline-block;
+  border-top: solid 0.2rem;
+  border-color: hsl(180, 62%, 55%);
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: -5px 15px 15px hsl(0, 0%, 85%);
+}
+.card-2 {
+  background-color: white;
+  display: inline-block;
+  border-top: solid 0.2rem;
+  border-color: hsl(0, 78%, 62%);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.card-3 {
+  background-color: white;
+  display: inline-block;
+  border-top: solid 0.2rem;
+  border-color: hsl(34, 97%, 64%);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.card-4 {
+  background-color: white;
+  display: inline-block;
+  border-top: solid 0.2rem;
+  border-color: hsl(212, 86%, 64%);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.card-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
