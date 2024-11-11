@@ -1,8 +1,32 @@
 body {
   box-sizing: content-box;
-  font-size: 15px;
+  font-family: poppins;
+  font-size: 0.93em;
+  font-weight: 400;
   background-color: hsl(0, 0%, 98%);
   color: hsl(234, 12%, 34%);
+  margin: 0;
+  padding: 2rem;
+  max-width: 1440px;
+}
+.main-container {
+  display: grid;
+  justify-items: center;
+}
+.head {
+  text-align: center;
+  min-width: 400px;
+}
+h1 {
+  font-weight: 600;
+  margin: 0px;
+}
+h2 {
+  font-weight: 600;
+  margin-bottom: 1.5em;
+}
+p {
+  margin-top: 1.5em;
 }
 .container {
   display: grid;
@@ -10,17 +34,10 @@ body {
   align-items: center;
   gap: 2rem;
 }
-header {
-  text-align: center;
-}
-.heading {
-  display: inline-block;
-  max-width: 510px;
-}
 .card-1 {
   background-color: white;
-  display: inline-block;
-  border-top: solid 0.2rem;
+
+  border-top: solid 0.3rem;
   border-color: hsl(180, 62%, 55%);
   padding: 1.5em;
   border-radius: 10px;
@@ -28,30 +45,49 @@ header {
 }
 .card-2 {
   background-color: white;
-  display: inline-block;
-  border-top: solid 0.2rem;
+
+  border-top: solid 0.3rem;
   border-color: hsl(0, 78%, 62%);
   padding: 1.5em;
   border-radius: 10px;
+  box-shadow: -5px 15px 15px hsl(0, 0%, 85%);
 }
 .card-3 {
   background-color: white;
-  display: inline-block;
-  border-top: solid 0.2rem;
+
+  border-top: solid 0.3rem;
   border-color: hsl(34, 97%, 64%);
   padding: 1.5em;
   border-radius: 10px;
+  box-shadow: -5px 15px 15px hsl(0, 0%, 85%);
 }
 .card-4 {
   background-color: white;
-  display: inline-block;
-  border-top: solid 0.2rem;
+  border-top: solid 0.3rem;
   border-color: hsl(212, 86%, 64%);
   padding: 1.5em;
   border-radius: 10px;
+  box-shadow: -5px 15px 15px hsl(0, 0%, 85%);
 }
 .card-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  box-shadow: -5px 15px 15px hsl(0, 0%, 85%);
+}
+.icon {
+  display: grid;
+  justify-items: end;
+}
+@media (max-width: 780px) {
+  .head {
+    min-width: 100%;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
